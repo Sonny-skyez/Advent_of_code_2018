@@ -32,7 +32,7 @@ res_frequency = 0   # starting with frequency 0
 
 # open file:
 
-with open('/Users/chrisbrown/PycharmProjects/Advent_of_code/1_Day/1_input.txt') as file:
+with open('/Users/chrisbrown/PycharmProjects/Advent_of_code/1_input.txt') as file:
 
     for line in file:
 

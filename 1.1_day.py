@@ -1,6 +1,7 @@
 '''
+--- Day 1, part 1: Chronal Calibration ---
+
 Adventofcode from: https://adventofcode.com/2018/day/1
-1-st day, part 1.
 
 After feeling like you've been falling for a few minutes, you look at the device's tiny screen.
 "Error: Device must be calibrated before first use. Frequency drift detected. Cannot maintain
@@ -26,7 +27,6 @@ Starting with a frequency of zero, what is the resulting frequency after all of 
 in frequency have been applied?
 '''
 
-# PART 1
 
 res_frequency = 0   # starting with frequency 0
 

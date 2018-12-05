@@ -1,6 +1,7 @@
 '''
-Adventofcode from: https://adventofcode.com/2018/day/1
-1-st day, part 2.
+--- Day 1, part 2: Chronal Calibration ---
+
+Adventofcode from: https://adventofcode.com
 
 After feeling like you've been falling for a few minutes, you look at the device's tiny screen.
 "Error: Device must be calibrated before first use. Frequency drift detected. Cannot maintain
@@ -41,17 +42,19 @@ while reached_twice is False:   # loop trouth the file untill result is reached 
     # open proper file:
     with open('/Users/chrisbrown/PycharmProjects/Advent_of_code/1_input.txt', 'r') as file:
 
-        for line in file:
 
+        for line in file:
 
                 res_frequency += int(line)  # change line to integer and add to result frequency
                 print(res_frequency)
+
 
                 if res_frequency in frequencies:
 
                     print('First frequency reached twice is: ',res_frequency)
                     reached_twice = True
                     break
+
 
                 else:
 

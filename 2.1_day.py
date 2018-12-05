@@ -31,7 +31,7 @@ count = {}
 
 # open file with letters:
 
-with open('/Users/chrisbrown/PycharmProjects/Advent_of_code/2_input.txt') as file:
+with open('2_input.txt') as file:
 
     for line in file:
 

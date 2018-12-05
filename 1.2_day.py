@@ -36,7 +36,7 @@ reached_twice = False
 while reached_twice is False:   # loop trough the file until result is reached twice
 
     # open proper file:
-    with open('/Users/chrisbrown/PycharmProjects/Advent_of_code/1_input.txt', 'r') as file:
+    with open('1_input.txt') as file:
 
         for line in file:
 

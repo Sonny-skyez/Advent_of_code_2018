@@ -28,7 +28,7 @@ this is found by removing the differing character from either ID, producing fgij
 
 import Levenshtein as levenshtein
 
-text = open("/Users/chrisbrown/PycharmProjects/Advent_of_code/2_input.txt")
+text = open("2_input.txt")
 
 lines = text.read().split()
 

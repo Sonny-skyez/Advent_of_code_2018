@@ -28,36 +28,23 @@ two_count = 0
 three_count = 0
 count = {}
 
-
 # open file with letters:
-
 with open('2_input.txt') as file:
-
     for line in file:
-
         is_two_in_line = False  # True if a pair of letters already counted in line
         is_three_in_line = False    # True if three of letters already counted in line
-
         line = line.strip('\n')
-
         # dictionary comprehension
         count = {i: line.count(i) for i in line}
-
-
         for key in count:
-
-
             if count[key] == 2 and is_two_in_line is False:
                 # 2 same letters found in line
                 two_count += 1
                 is_two_in_line = True
-
-
             if count[key] == 3 and is_three_in_line is False:
                 # 3 same letters found in line
                 three_count += 1
                 is_three_in_line = True
-
 
 checksum = two_count * three_count
 print('checksum', checksum)

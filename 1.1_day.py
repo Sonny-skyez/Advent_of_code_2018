@@ -27,16 +27,11 @@ Starting with a frequency of zero, what is the resulting frequency after all of 
 in frequency have been applied?
 '''
 
-
 res_frequency = 0   # starting with frequency 0
 
 # open file:
-
 with open('1_input.txt') as file:
-
     for line in file:
-
         res_frequency += int(line)  # change line to integer and add to result frequency
-
 
 print('The result frequency is: %5d' % (res_frequency))    # result frequency; printed

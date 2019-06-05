@@ -25,13 +25,10 @@ What letters are common between the two correct box IDs? (In the example above,
 this is found by removing the differing character from either ID, producing fgij.)
 '''
 
-
 import Levenshtein as levenshtein
 
 text = open("2_input.txt")
-
 lines = text.read().split()
-
 correct = []
 
 for box_one in lines:
@@ -40,17 +37,11 @@ for box_one in lines:
             correct.append(box_one)
             correct.append(box_two)
 
-
 # find and print letters common for box_one and box_2
 for box_one in correct:
-
     for box_two in correct:
-
         for i in range(len(box_one)):
-
             if box_one[i] != box_two[i]:
-
                 solution = box_one[:i] + box_one[i+1:]
-
 
 print(solution)

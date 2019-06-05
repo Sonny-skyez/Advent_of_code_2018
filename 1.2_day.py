@@ -27,29 +27,18 @@ Starting with a frequency of zero, what is the resulting frequency after all of 
 in frequency have been applied?
 '''
 
-
 res_frequency = 0   # starting with frequency 0
 frequencies = []    # an empty list of frequency results
 reached_twice = False
 
-
 while reached_twice is False:   # loop trough the file until result is reached twice
-
     # open proper file:
     with open('1_input.txt') as file:
-
         for line in file:
-
                 res_frequency += int(line)  # change line to integer and add to result frequency
-
-
                 if res_frequency in frequencies:
-
                     print('First frequency reached twice is: ', res_frequency)
                     reached_twice = True
                     break
-
-
                 else:
-
                     frequencies.append(res_frequency)
